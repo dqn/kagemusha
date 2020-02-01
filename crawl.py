@@ -17,6 +17,7 @@ def main():
         statuses = api.user_timeline(
             screen_name=screen_name,
             max_id=max_id,
+            include_rts=False,
             tweet_mode='extended',
         )
 

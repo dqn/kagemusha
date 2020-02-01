@@ -5,6 +5,7 @@ import spacy
 def normalize(text):
     text = re.sub(r'#.+', '', text)
     text = re.sub(r'https?://.+', '', text)
+    text = re.sub(r'@\w+', '', text)
 
     return text.strip()
 
